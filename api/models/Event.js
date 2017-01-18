@@ -13,6 +13,11 @@ module.exports = {
     },
     description: {
       type: 'string'
+    },
+    // Add a reference to participants
+    participants: {
+      collection: 'user',
+      via: 'participant'
     }
   }
 };

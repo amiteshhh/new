@@ -7,19 +7,23 @@
 
 module.exports = {
   attributes: {
-    username: {
+    userName: {
       type: 'string'
     },
     email: {
-      type: 'string'
+      type: 'string',
+      unique: true
     },
     mobile: {
       type: 'string',
       unique: true
     },
     password: {
-      type: 'string',
-      unique: true
+      type: 'string'
+    },
+    // Add a reference to User
+    participant: {
+      model: 'user'
     }
   }
 };
