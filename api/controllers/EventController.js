@@ -6,6 +6,6 @@
  */
 
 module.exports = {
-	
+	//localhost:1337/event/1/participants/1-- post and delete
 };
 

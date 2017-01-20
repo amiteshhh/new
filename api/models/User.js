@@ -18,12 +18,47 @@ module.exports = {
       type: 'string',
       unique: true
     },
+    deviceId: {
+      type: 'string'
+    },
     password: {
       type: 'string'
     },
-    // Add a reference to User
-    participant: {
-      model: 'user'
+    isOnline: {
+      type: 'boolean'
+    },
+    // Foreign Key/Associations
+    eventsHosted: {
+      collection: 'event',
+      via: 'eventHostedBy'
+    },
+    eventsParticipated: {
+      collection: 'event',
+      via: 'eventParticipants'
+    },
+    eventsLiked: {
+      collection: 'event',
+      via: 'eventLikedBy'
+    },
+    eventsShared: {
+      collection: 'event',
+      via: 'eventSharedBy'
+    },
+    textTemplatesLiked: {
+      collection: 'textTemplate',
+      via: 'textTemplateLikedBy'
+    },
+    textTemplatesShared: {
+      collection: 'textTemplate',
+      via: 'textTemplateSharedBy'
+    },
+    optionTemplatesLiked: {
+      collection: 'optionTemplate',
+      via: 'optionTemplateLikedBy'
+    },
+    optionTemplatesShared: {
+      collection: 'optionTemplate',
+      via: 'optionTemplateSharedBy'
     }
   }
 };

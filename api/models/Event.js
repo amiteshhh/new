@@ -14,10 +14,46 @@ module.exports = {
     description: {
       type: 'string'
     },
-    // Add a reference to participants
-    participants: {
+    startDate: {
+      type: 'datetime'
+    },
+    endDate: {
+      type: 'datetime'
+    },
+    waitingTime: {
+      type: 'integer'
+    },
+    minimumParticipantConstraint: {
+      type: 'integer'
+    },
+    templateType: {
+      type: 'string',
+      enum: ['text', 'yesNo', 'singleSelect', 'multiSelect', 'range'],
+      defaultsTo: 'text'
+    },
+    eventStatus: {
+      type: 'string',
+      enum: ['created', 'open', 'closed'],
+      defaultsTo: 'created'
+    },
+    // Foreign Key/Associations
+    eventHostedBy: {
+      model: 'user'
+    },
+    eventParticipants: {
       collection: 'user',
-      via: 'participant'
+      via: 'eventsParticipated',
+      dominant: true
+    },
+    eventLikedBy: {
+      collection: 'user',
+      via: 'eventsLiked',
+      dominant: true
+    },
+    eventSharedBy: {
+      collection: 'user',
+      via: 'eventsShared',
+      dominant: true
     }
   }
 };
