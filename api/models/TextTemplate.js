@@ -11,13 +11,13 @@ module.exports = {
     question: {
       type: 'string'
     },
-    event: {
+    textTemplateEventXRef: {
       model: 'event'
     },
     isConfigQuestion: {
       type: 'boolean'
     },
-    respondedBy: {
+    textTemplateCreatedBy: {
       model: 'user'
     },
     textTemplateLikedBy: {

@@ -20,10 +20,10 @@ module.exports = {
     endDate: {
       type: 'datetime'
     },
-    waitingTime: {
+    waitingPollTime: {
       type: 'integer'
     },
-    minimumParticipantConstraint: {
+    minimumParticipantForPoll: {
       type: 'integer'
     },
     templateType: {
@@ -39,6 +39,10 @@ module.exports = {
     // Foreign Key/Associations
     eventHostedBy: {
       model: 'user'
+    },
+    textTemplates: {
+      collection: 'textTemplate',
+      via: 'textTemplateEventXRef'
     },
     eventParticipants: {
       collection: 'user',

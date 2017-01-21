@@ -52,6 +52,10 @@ module.exports = {
       collection: 'textTemplate',
       via: 'textTemplateSharedBy'
     },
+    textTemplatesCreated: {
+      collection: 'textTemplate',
+      via: 'textTemplateCreatedBy'
+    },
     optionTemplatesLiked: {
       collection: 'optionTemplate',
       via: 'optionTemplateLikedBy'
