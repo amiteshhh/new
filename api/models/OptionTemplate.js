@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-    title: {
+    question: {
       type: 'string'
     },
     optionTemplateEventXRef: {
@@ -34,7 +34,8 @@ module.exports = {
     //end of linear range related properties
     options: {
       collection: 'options',
-      via: 'optionTemplate'
+      via: 'optionTemplate',
+      dominant: true
     },
     /*optionTemplateCreatedBy: {
       model: 'user'

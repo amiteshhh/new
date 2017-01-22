@@ -14,6 +14,9 @@ module.exports = {
     optionTemplate: {
       model: 'optionTemplate'
     },
+    /*eventOptionXref: {
+      model: 'event'
+    },*/
     optionRespondedBy: {
       collection: 'user',
       via: 'optionsResponded',

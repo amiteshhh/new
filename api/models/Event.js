@@ -42,7 +42,8 @@ module.exports = {
     },
     optionTemplates: {//limitations
       collection: 'optionTemplate',
-      via: 'optionTemplateEventXRef'
+      via: 'optionTemplateEventXRef'/*,
+      through: 'options'*/
     },
     textTemplates: {
       collection: 'textTemplate',
