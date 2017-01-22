@@ -14,8 +14,10 @@ module.exports = {
     optionTemplate: {
       model: 'optionTemplate'
     },
-    respondedBy: {
-      model: 'user'
+    optionRespondedBy: {
+      collection: 'user',
+      via: 'optionsResponded',
+      dominant: true
     }
   }
 };

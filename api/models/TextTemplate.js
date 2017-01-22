@@ -15,7 +15,8 @@ module.exports = {
       model: 'event'
     },
     isConfigQuestion: {
-      type: 'boolean'
+      type: 'boolean',
+      defaultsTo:true
     },
     textTemplateCreatedBy: {
       model: 'user'

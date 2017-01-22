@@ -10,9 +10,8 @@ module.exports = {
     userName: {
       type: 'string'
     },
-    email: {
-      type: 'string',
-      unique: true
+    company: {
+      type: 'string'
     },
     mobile: {
       type: 'string',
@@ -63,6 +62,10 @@ module.exports = {
     optionTemplatesShared: {
       collection: 'optionTemplate',
       via: 'optionTemplateSharedBy'
+    },
+    optionsResponded: {
+      collection: 'options',
+      via: 'optionRespondedBy'
     }
   }
 };
