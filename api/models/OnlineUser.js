@@ -15,15 +15,14 @@ module.exports = {
   // context explicitly.
   autosubscribe: ['destroy', 'update'],
   attributes: {
-
-    userId: 'string',
+    socketId: { type: 'string' },
     rooms: {
       collection: 'room',
       via: 'onlineUsers',
       dominant: true
     },
-    user:{
-      model:'user'
+    user: {
+      model: 'user'
     }
 
   },
@@ -33,7 +32,7 @@ module.exports = {
   afterPublishUpdate: function (id, changes, req, options) {
 
     // Get the full user model, including what rooms they're subscribed to
-    User.findOne(id).populate('rooms').exec(function (err, user) {
+    OnlineUser.findOne(id).populate('rooms').exec(function (err, user) {
       // Publish a message to each room they're in.  Any socket that is 
       // subscribed to the room will get the message. Saying it's "from" id:0
       // will indicate to the front-end code that this is a systen message

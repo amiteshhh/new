@@ -7,7 +7,7 @@ module.exports = {
     // you'd want multiple tabs to represent the same logged-in user.
     announce: function (req, res) {
 
-        // Get the socket ID from the reauest
+        // Get the socket ID from the request
         var socketId = sails.sockets.getId(req);
 
         // Get the session from the request
@@ -36,6 +36,7 @@ module.exports = {
             // Save this user in the session, indexed by their socket ID.
             // This way we can look the user up by socket ID later.
             session.users[socketId] = user;
+            console.log(session.users);
 
             // Subscribe the connected socket to custom messages regarding the user.
             // While any socket subscribed to the user will receive messages about the
