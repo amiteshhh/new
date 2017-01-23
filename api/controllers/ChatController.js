@@ -14,7 +14,8 @@ module.exports = {
       console.log('private msg from', req.param('from'));
       OnlineUser.message(req.param('to'), {
         from: req.param('from'),
-        msg: req.param('msg')
+        msg: req.param('msg'),
+        event: req.param('event')
       });
 
    // });
