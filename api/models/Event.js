@@ -40,10 +40,8 @@ module.exports = {
     eventHostedBy: {
       model: 'user'
     },
-    optionTemplates: {//limitations
-      collection: 'optionTemplate',
-      via: 'optionTemplateEventXRef'/*,
-      through: 'options'*/
+    optionTemplate: {//limitations
+      model: 'optionTemplate'
     },
     textTemplates: {
       collection: 'textTemplate',

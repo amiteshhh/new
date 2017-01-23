@@ -12,8 +12,7 @@ module.exports = {
       type: 'string'
     },
     optionTemplateEventXRef: {
-      model: 'event',
-      unique: true
+      model: 'event'
     },
     //linear scale related properties
     helpText: {
@@ -37,9 +36,6 @@ module.exports = {
       via: 'optionTemplate',
       dominant: true
     },
-    /*optionTemplateCreatedBy: {
-      model: 'user'
-    },*/
     optionTemplateLikedBy: {
       collection: 'user',
       via: 'optionTemplatesLiked',

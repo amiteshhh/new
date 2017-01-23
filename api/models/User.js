@@ -14,8 +14,8 @@ module.exports = {
       type: 'string'
     },
     mobile: {
-      type: 'string',
-      unique: true
+      type: 'string'/*,
+      unique: true*/
     },
     deviceId: {
       type: 'string'
