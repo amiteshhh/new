@@ -25,7 +25,7 @@ module.exports = {
 		.populate('eventLikedBy')
 		.populate('eventSharedBy')
 		.exec(function (err, event) {
-			console.log("findDeep", event);
+			//console.log("findDeep", event);
 			if (event.templateType == 'text') {
 				return res.json(event);
 			}
@@ -33,7 +33,7 @@ module.exports = {
 			.populate('options')
 			.exec(function (err, optionTemplate) {
 				event.optionTemplate = optionTemplate;
-				console.log("findDeep OptionTemplate", event);
+				//console.log("findDeep OptionTemplate", event);
 				res.json(event);
 				// => null
 			});

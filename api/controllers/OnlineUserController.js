@@ -21,7 +21,7 @@ module.exports = {
         //user.userId = user.id;
         //delete user.id;
 
-        console.log(user);
+        //console.log(user);
 
         OnlineUser.create({
             user: req.body.user,
@@ -31,7 +31,7 @@ module.exports = {
                 return res.serverError(err);
             }
             user.user = req.body.user;
-            console.log('user');
+            //console.log('user');
 
             // Save this user in the session, indexed by their socket ID.
             // This way we can look the user up by socket ID later.
