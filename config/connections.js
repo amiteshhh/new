@@ -56,13 +56,21 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
-  // someMongodbServer: {
+  // someMongodbServer_dev: {
   //   adapter: 'sails-mongo',
   //   host: 'localhost',
   //   port: 27017,
-  //   user: 'username', //optional
-  //   password: 'password', //optional
-  //   database: 'your_mongo_db_name_here' //optional
+  //   //user: 'username', //optional
+  //  // password: 'password', //optional
+  //   database: 'votepad_db' //optional
+  // },
+  // someMongodbServer_prod: {
+  //   adapter: 'sails-mongo',
+  //   host: 'localhost',
+  //   port: 27017,
+  //   //user: 'username', //optional
+  //  // password: 'password', //optional
+  //   database: 'votepad_db' //optional
   // },
 
   /***************************************************************************
@@ -74,13 +82,24 @@ module.exports.connections = {
   *                                                                          *
   *                                                                          *
   ***************************************************************************/
-  // somePostgresqlServer: {
-  //   adapter: 'sails-postgresql',
-  //   host: 'YOUR_POSTGRES_SERVER_HOSTNAME_OR_IP_ADDRESS',
-  //   user: 'YOUR_POSTGRES_USER', // optional
-  //   password: 'YOUR_POSTGRES_PASSWORD', // optional
-  //   database: 'YOUR_POSTGRES_DB' //optional
-  // }
+  somePostgresqlServer_dev: {
+    adapter: 'sails-postgresql',
+    host: 'ec2-54-243-197-180.compute-1.amazonaws.com',
+    uri: 'postgres://bqfonwiyzqqoqv:29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006@ec2-54-243-197-180.compute-1.amazonaws.com:5432/d47rvtqfq9tbb',
+    user: 'bqfonwiyzqqoqv', // optional
+    port: 5432, // optional
+    password: '29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006', // optional
+    database: 'd47rvtqfq9tbb' //optional
+  },
+  somePostgresqlServer_prod: {
+    adapter: 'sails-postgresql',
+    host: 'ec2-54-243-197-180.compute-1.amazonaws.com',
+    uri: 'postgres://bqfonwiyzqqoqv:29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006@ec2-54-243-197-180.compute-1.amazonaws.com:5432/d47rvtqfq9tbb',
+    user: 'bqfonwiyzqqoqv', // optional
+    port: 5432, // optional
+    password: '29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006', // optional
+    database: 'd47rvtqfq9tbb' //optional
+  }
 
 
   /***************************************************************************

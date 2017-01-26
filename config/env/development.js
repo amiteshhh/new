@@ -18,7 +18,8 @@ module.exports = {
    ***************************************************************************/
 
   // models: {
-  //   connection: 'someMongodbServer'
+  //   //connection: 'someMongodbServer_dev'
+  //   connection: 'somePostgresqlServer_dev'
   // }
 
 };
