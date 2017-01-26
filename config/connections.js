@@ -89,7 +89,8 @@ module.exports.connections = {
     user: 'bqfonwiyzqqoqv', // optional
     port: 5432, // optional
     password: '29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006', // optional
-    database: 'd47rvtqfq9tbb' //optional
+    database: 'd47rvtqfq9tbb', //optional
+    ssl: true
   },
   somePostgresqlServer_prod: {
     adapter: 'sails-postgresql',
@@ -98,7 +99,8 @@ module.exports.connections = {
     user: 'bqfonwiyzqqoqv', // optional
     port: 5432, // optional
     password: '29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006', // optional
-    database: 'd47rvtqfq9tbb' //optional
+    database: 'd47rvtqfq9tbb', //optional
+    ssl: true
   }
 
 
