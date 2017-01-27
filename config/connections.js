@@ -100,7 +100,7 @@ module.exports.connections = {
     host: 'ec2-54-243-197-180.compute-1.amazonaws.com',
     uri: 'postgres://bqfonwiyzqqoqv:29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006@ec2-54-243-197-180.compute-1.amazonaws.com:5432/d47rvtqfq9tbb',
     user: 'bqfonwiyzqqoqv', // optional
-    port: 5432, // optional
+    //port: 80, // optional
     password: '29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006', // optional
     database: 'd47rvtqfq9tbb', //optional
     ssl: true
