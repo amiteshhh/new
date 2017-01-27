@@ -17,7 +17,8 @@ module.exports.models = {
   * connections (see `config/connections.js`)                                *
   *                                                                          *
   ***************************************************************************/
-   connection: 'localDiskDb',
+  // connection: 'localDiskDb',
+   connection: 'somePostgresqlServer_dev',
   //connection: 'someMongodbServer',
 
   /***************************************************************************
@@ -29,8 +30,8 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   // migrate: 'alter',
-  // migrate: 'drop',
-   migrate: 'safe',//not working though -- /http://stackoverflow.com/questions/28524926/the-hook-orm-taking-too-long-to-load
+   migrate: 'drop',
+  // migrate: 'safe',//not working though -- /http://stackoverflow.com/questions/28524926/the-hook-orm-taking-too-long-to-load
    autoPK: true
 
 };
