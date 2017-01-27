@@ -19,7 +19,7 @@ module.exports = {
 
   models: {
     //connection: 'someMongodbServer_dev'
-    connection: 'somePostgresqlServer_dev'
+    connection: 'somePostgresqlServer_prod'
   }
 
 };

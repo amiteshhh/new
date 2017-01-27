@@ -5,5 +5,5 @@ Make sure it is triggering its `initialize()` callback, or else set `sails.confi
     at Timeout.tooLong [as _onTimeout] (C:\Users\amitesh\AppData\Roaming\npm\node_modules\sails\lib\app\private\loadHooks.js:85:
 21)*/
 module.exports.orm = {
-  _hookTimeout: 60000 // I used 60 seconds as my new timeout
+  _hookTimeout: 300000 // I used 60 seconds as my new timeout
 };

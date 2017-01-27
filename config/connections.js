@@ -97,12 +97,12 @@ module.exports.connections = {
   },
   somePostgresqlServer_prod: {
     adapter: 'sails-postgresql',
-    host: 'ec2-54-243-197-180.compute-1.amazonaws.com',
-    uri: 'postgres://bqfonwiyzqqoqv:29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006@ec2-54-243-197-180.compute-1.amazonaws.com:5432/d47rvtqfq9tbb',
-    user: 'bqfonwiyzqqoqv', // optional
-    //port: 80, // optional
-    password: '29c10c291e43f1d53dc1b90da8350ced9a400d84a76b9cf39461655eb732f006', // optional
-    database: 'd47rvtqfq9tbb', //optional
+    host: 'ec2-54-243-38-139.compute-1.amazonaws.com',
+    uri: 'postgres://brynrpkzszqkdy:63d5ec1cb6414598717a0482031dc801fe5b6ddb42706b9fd53dde87b8110fae@ec2-54-243-38-139.compute-1.amazonaws.com:5432/dcbe05rj5tq8dn',
+    user: 'brynrpkzszqkdy', // optional
+    port: 5432, // optional
+    password: '63d5ec1cb6414598717a0482031dc801fe5b6ddb42706b9fd53dde87b8110fae', // optional
+    database: 'dcbe05rj5tq8dn', //optional
     ssl: true
   }
 
